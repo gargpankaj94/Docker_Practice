@@ -8,4 +8,4 @@ WORKDIR /hello_world
 RUN pip3 install -r requirements.txt
 RUN pip install --upgrade pip
 
-CMD Hello_World.py
+CMD ["python3","Hello_World.py"]
