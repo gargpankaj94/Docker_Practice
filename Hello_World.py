@@ -100,8 +100,6 @@ pd.DataFrame(val_1/val_2).sort_values(by=['count'], ascending=False).head(10)
 # How the number of tickets given changes with each month?
 import seaborn as sns
 sns.set(color_codes=True)
-%matplotlib inline
-%config InlineBackend.figure_format = 'retina'
 ​
 month = []
 for time_stamp in pd.to_datetime(ticket_df['Issue Date']):
