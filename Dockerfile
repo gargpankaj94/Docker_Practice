@@ -8,6 +8,8 @@ WORKDIR /hello_world
 RUN pip3 install -r requirements.txt
 RUN pip install --upgrade pip
 
+RUN apt update
+
 RUN apt install -y default-jre
 
 RUN wget https://dlcdn.apache.org/spark/spark-3.3.2/spark-3.3.2-bin-hadoop3.tgz
