@@ -1,6 +1,8 @@
 import os
 os.system('apt update')
-os.system('apt-get install openjdk-8-jdk -qq > /dev/null')
+os.system('add-apt-repository ppa:webupd8team/java')
+os.system('apt update')
+os.system('apt install openjdk-8-jdk')
 os.system('wget -q https://dlcdn.apache.org/spark/spark-3.3.2/spark-3.3.2-bin-hadoop3.tgz')
 os.system('tar xf spark-3.3.2-bin-hadoop3.tgz')
 os.system('pip install -q findspark')
